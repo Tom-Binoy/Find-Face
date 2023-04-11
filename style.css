@@ -1,0 +1,27 @@
+body{
+    background: linear-gradient( rgb(86, 11, 91),rgb(27, 93, 128) );
+}
+
+.objects{
+    color:rgb(10, 226, 14) ;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#url{
+    display: inline-block;
+    border: 5px ridge grey;
+    width: 300px;
+}
+#snap{
+    display: inline-block;
+    border: 5px ridge rgb(0, 208, 255);
+    width: 300px;
+    height: 300px;
+}
+
+
+.b{
+    color: aliceblue;
+}
+

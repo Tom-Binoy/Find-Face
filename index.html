@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Face recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container" >
+    
+    <center>
+        <h1 style="border: 5px ridge ;" class="b">Find Face</h1>
+    <b> <h3 style="color: chocolate;">Who are the people you can find here</h3>
+    <p class="b" >Dwayne Johnson(Actor)<br>Joe Biden(Current President of US)<br>Elon Musk(CEO of Tesla Inc and SpaceX)<br>Jeff Bezos(founder and chairman of Amazon)<br>LeBron James(An american professional player and entrepreneur who won four NBA championships, four NBA MVP awards, four NBA Finals MVP awards, and two Olympic gold medals.)</p>
+    </b>
+
+    
+    <br><h5 class="b" >-Select the images we provided-</h5>
+    
+    <br>  <div id="snap" class="d">
+    <img id="img" src=''>
+  </div>
+
+    <br><br>
+    <button id="select" class="btn btn-success" data-toggle="modal" data-target="#img">Select our Images</button></div>
+    
+    
+    <div id="mt" data-toggle="modal" data-target="#img"></div>
+  
+    <div class="modal fade" id="img">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Select An Image</h4>
+            <button id="close" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+            <span>  <img id="Dwayne Johnson" class="img-responive" width="100" onclick="sm(this.id)" src="Dwayne Johnson.png"><p>Dwayne Johnson</p> </span>
+            <span>  <img id="Joe Biden" class="img-responive" width="100" onclick="sm(this.id)" src="Joe Biden.png"><p>Joe Biden</p></span>
+            <span>  <img id="Jeff Bezos" class="img-responive" width="100" onclick="sm(this.id)" src="Jeff Bezos.png"><p>Jeff Bezos</p></span>
+            <span>  <img id="LeBron James" class="img-responive" width="100" onclick="sm(this.id)" src="LeBron James.png"><p>LeBron James</p></span>
+            <span>  <img id="Elon Musk" class="img-responive" width="100" onclick="sm(this.id)" src="Elon Musk.png"><p>Elon Musk</p></span>
+             </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+    <br><br>
+  <h4 style="background-color: rgb(197, 56, 28);">Who is This? </h4>
+  <div id="name" style="background-color: rgb(4, 208, 58);"></div>
+  <br>
+  <h4 style="background-color: violet;">Accuracy -<span id="accuracy"></span></h4>
+  </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
