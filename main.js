@@ -1,10 +1,9 @@
-s="";
 
-function sm(n){
-    console.log(s)
-    s = n;
-    row = "<img class='img-responsive' src='"+s+".png'>"
-        document.getElementById("snap").innerHTML = row ;
+
+function sm(s){
+    
+    row = s+".png"
+        document.getElementById("imgR").src = row ;
         window.alert("The Image You Selected has Uploaded");
        
         $("#img").modal("hide");
@@ -18,8 +17,9 @@ function modelLoaded(){
     console.log("modelLoaded");
 }
 function showresult(){
-    img= s+'.png'
+    img= document.getElementById("imgR")
     classifier.classify(img,gotResult);
+    console.log(img)
 }
 
 function gotResult(error,result){
